@@ -485,6 +485,8 @@ GameObject:
   - component: {fileID: 953585929}
   - component: {fileID: 953585931}
   - component: {fileID: 953585930}
+  - component: {fileID: 953585932}
+  - component: {fileID: 953585933}
   m_Layer: 0
   m_Name: manager
   m_TagString: Untagged
@@ -549,9 +551,37 @@ MonoBehaviour:
   m_LodType: 1
   m_NumUpdatesBeforeRemoval: 10
   m_SecondsBetweenUpdates: 2.5
-  m_CurrentRenderState: 2
+  m_CurrentRenderState: 0
   m_VisualMaterial: {fileID: 15303, guid: 0000000000000000f000000000000000, type: 0}
   m_OcclusionMaterial: {fileID: 15302, guid: 0000000000000000f000000000000000, type: 0}
+--- !u!114 &953585932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953585928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f079dd19fecda843b1e05fce25619c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crack: {fileID: 8087379754125128026, guid: 9c6aca56b77e1db498fd6a2d80e8e852, type: 3}
+  distanceFromWall: 0.1
+--- !u!114 &953585933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953585928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baed1735bd4f7d9449b5f1b57a938fba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Crack: {fileID: 8087379754125128026, guid: 9c6aca56b77e1db498fd6a2d80e8e852, type: 3}
+  cracks: []
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0

@@ -71,7 +71,8 @@ public class Manager : MonoBehaviour, IMixedRealityPointerHandler
 
             print(hit.point);
             Instantiate(crack, hit.point + hit.normal * distanceFromWall,Quaternion.identity);
-            
+            //Instantiate(crack, hit.point + hit.normal * distanceFromWall, Quaternion.FromToRotation(Vector3.back, hit.normal));
+
             //Debug.Log($"<color=yellow>position : { hit.point + hit.normal * distanceFromWall}</color>");
             //crack.transform.rotation = Quaternion.FromToRotation(Vector3.back, hit.normal);
             print(crack.transform.position);
